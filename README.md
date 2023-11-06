@@ -1,3 +1,6 @@
+# chat-ui-angular
+web chat application ui made with angular 13
+
 # AngularDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
