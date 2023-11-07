@@ -1,0 +1,7 @@
+.card-skeleton {
+  width: auto;
+  display: flex;
+  border-radius: 20px;
+  border: 0.1px solid grey;
+  background-color: whitesmoke;
+}
