@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.icon-padding {
+  padding: 0.75rem;
+}
+
+.border-rounded {
+  border-radius: 50%;
+}
+
+.relative {
+  position: relative;
+}
