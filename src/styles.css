@@ -1,6 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-color: #e4dbfd;
+}
+
 .d-flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -27,6 +39,16 @@
   margin-left: 0.5rem;
 }
 
+.mr-1 {
+  margin-right: 0.5rem;
+}
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
 .icon-padding {
   padding: 0.75rem;
 }
@@ -37,4 +59,8 @@
 
 .relative {
   position: relative;
+}
+
+.pointer {
+  cursor: pointer;
 }

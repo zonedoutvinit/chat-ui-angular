@@ -1,22 +1,25 @@
 <div class="chat-space">
     <!-- header of chat -->
     <div class="chat-header">
-        <div class="d-flex justify-between">
-            <img [src]=sampleChatHeaderJson.profile height="30px" width="30px" alt="grpImage"
-                class="ml-1 border-rounded">
-            <div class="ml-1 chat-header-title">
-                {{sampleChatHeaderJson.chatGrpName}}
+        <div class="d-flex justify-between pointer">
+            <div class="d-flex flex-col justify-center">
+                <img [src]=sampleChatHeaderJson.profile height="35px" width="35px" alt="grpImage" class="border-rounded">
+            </div>
+            <div class="d-flex flex-col justify-center">
+                <div class="ml-1 chat-header-title">
+                    {{sampleChatHeaderJson.chatGrpName}}
+                </div>
             </div>
         </div>
         <div class="d-flex">
-            <img class="icon-padding" [src]="sampleChatHeaderJson.videocall" height="25px" />
-            <img class="icon-padding" [src]="sampleChatHeaderJson.settings" height="25px" />
+            <img class="icon-padding pointer" [src]="sampleChatHeaderJson.videocall" height="25px" />
+            <img class="icon-padding pointer" [src]="sampleChatHeaderJson.settings" height="25px" />
         </div>
     </div>
 
     <!-- content of chat -->
-    <div class="chat-body">
-        <div *ngFor="let messages of sampleChatJson">
+    <div class="chat-body" id="chat-container">
+        <div *ngFor="let messages of messages" #messageItem>
             <div class="chat-message">
                 <div class="d-flex">
 
@@ -27,7 +30,7 @@
                     <div class="ml-1 chat-sender">{{messages.username}}</div>
                     <div class="ml-1">{{messages.time}}</div>
                 </div>
-                <div [ngClass]="['ml-1','message', messages.type == 'user' ? 'user' : 'sender']">
+                <div id="message-content" [ngClass]="['ml-1','message', messages.type == 'user' ? 'user' : 'sender']">
                     <div>{{messages.content}}</div>
                 </div>
             </div>
@@ -36,11 +39,11 @@
 
     <!-- Input area of chat -->
     <div class="chat-input">
-        <input type="text" id="message-input" placeholder="Type your message..." />
+        <input type="text" id="message-input" placeholder="Type your message..." (input)="updateTextField($event)" (keyup.enter)="sendMessage($event)"/>
         <div class="border-rounded" id="attach-button">
             <img class="icon-padding" id="attach-icon" [src]="sampleInputJson.attachBtn" height="25px" />
         </div>
-        <div class="border-rounded" id="send-button">
+        <div class="border-rounded" id="send-button" (click)="sendMessage($event)">
             <img class="icon-padding" id="send-icon" [src]="sampleInputJson.sendBtn" height="25px" />
         </div>
 
