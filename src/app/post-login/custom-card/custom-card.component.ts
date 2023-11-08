@@ -7,7 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CustomCardComponent implements OnInit {
   @Input() height = 1;
+  @Input() onClose!: (args: any) => void;
   constructor() {}
 
   ngOnInit(): void {}
+
+  closeCard = () => this.onClose && this.onClose(false);
 }

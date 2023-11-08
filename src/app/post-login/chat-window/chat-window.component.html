@@ -1,7 +1,7 @@
 <div class="d-flex flex-col flex-grow">
     <!-- header of chat -->
     <div class="chat-header">
-        <div class="d-flex justify-between pointer">
+        <div class="d-flex justify-between pointer" (click)="chatDetailsBtnClick()">
             <div class="d-flex flex-col justify-center">
                 <img [src]=headerInfo.profile height="35px" width="35px" alt="grpImage" class="border-rounded">
             </div>
@@ -13,7 +13,7 @@
         </div>
         <div class="d-flex">
             <img class="icon-padding pointer" [src]="headerInfo.videocall" height="25px" />
-            <img class="icon-padding pointer" [src]="headerInfo.settings" height="25px" />
+            <img class="icon-padding pointer" [src]="headerInfo.settings" (click)="chatDetailsBtnClick()" height="25px" />
         </div>
     </div>
 
@@ -41,7 +41,7 @@
     <div class="chat-input">
         <input type="text" id="message-input" placeholder="Type your message..." (input)="updateTextField($event)"
             (keyup.enter)="sendMessage($event)" />
-        <div class="border-rounded" id="attach-button">
+        <div class="border-rounded" id="attach-button" (click)="mediaBtnClick()">
             <img class="icon-padding" id="attach-icon" [src]="inputAssets.attachBtn" height="25px" />
         </div>
         <div class="border-rounded" id="send-button" (click)="sendMessage($event)">

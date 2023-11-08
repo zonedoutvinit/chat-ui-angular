@@ -4,9 +4,14 @@ import {
   AfterViewInit,
   QueryList,
   ViewChildren,
+  Input,
 } from '@angular/core';
 import { scrollToBottom, timeFormater } from 'src/utils/helpers';
-import { sampleChatHeaderJson, sampleChatJson, sampleInputJson } from 'src/utils/static-data';
+import {
+  sampleChatHeaderJson,
+  sampleChatJson,
+  sampleInputJson,
+} from 'src/utils/static-data';
 
 @Component({
   selector: 'app-chat-window',
@@ -15,6 +20,9 @@ import { sampleChatHeaderJson, sampleChatJson, sampleInputJson } from 'src/utils
 })
 export class ChatWindowComponent implements AfterViewInit {
   @ViewChildren('messageItem') messageItems!: QueryList<ElementRef>;
+
+  @Input() onChatDetailsClick!: (args: any) => void;
+  @Input() onMediaClick!: (args: any) => void;
 
   ngAfterViewInit() {
     this.messageItems.changes.subscribe(() => {
@@ -48,5 +56,13 @@ export class ChatWindowComponent implements AfterViewInit {
       ) as HTMLInputElement;
       inputField.value = '';
     }
+  }
+
+  mediaBtnClick() {
+    this.onMediaClick && this.onMediaClick(true);
+  }
+
+  chatDetailsBtnClick() {
+    this.onChatDetailsClick && this.onChatDetailsClick(true);
   }
 }
