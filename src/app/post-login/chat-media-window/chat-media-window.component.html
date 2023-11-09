@@ -1,0 +1,18 @@
+<div>
+    <!-- Header -->
+    <div class="chat-details-header">
+        <div class="my-1 d-flex justify-between w-100">
+            <div class="d-flex flex-col justify-center">
+                <div class="chat-header-title">
+                    {{chatDetailAssets.title}}
+                </div>
+            </div>
+            <div class="d-flex flex-col justify-center pointer" (click)="closeCard()">
+                <img [src]="chatDetailAssets.close" height="35px" width="35px" alt="grpImage">
+            </div>
+        </div>
+    </div>
+
+    <!-- tabs -->
+    <app-custom-tabs [tabs]='tabs' [selectedTab]='selectedtab' [onTabClick]="tabSwitch"></app-custom-tabs>
+</div>
