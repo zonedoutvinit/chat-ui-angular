@@ -3,7 +3,7 @@
     <div class="chat-header">
         <div class="d-flex justify-between pointer" (click)="chatDetailsBtnClick()">
             <div class="d-flex flex-col justify-center">
-                <img [src]=headerInfo.profile height="35px" width="35px" alt="grpImage" class="border-rounded">
+                <img [src]=headerInfo.profile height="35px" width="35px" alt="grpImage" class="round">
             </div>
             <div class="d-flex flex-col justify-center">
                 <div class="ml-1 chat-header-title">
@@ -18,7 +18,7 @@
     </div>
 
     <!-- content of chat -->
-    <div class="chat-body" id="chat-container">
+    <div class="chat-body hidden-scroll" id="chat-container">
         <div *ngFor="let messages of messages" #messageItem>
             <div class="chat-message">
                 <div class="d-flex">
@@ -41,10 +41,10 @@
     <div class="chat-input">
         <input type="text" id="message-input" placeholder="Type your message..." (input)="updateTextField($event)"
             (keyup.enter)="sendMessage($event)" />
-        <div class="border-rounded" id="attach-button" (click)="mediaBtnClick()">
+        <div class="round" id="attach-button" (click)="mediaBtnClick()">
             <img class="icon-padding" id="attach-icon" [src]="inputAssets.attachBtn" height="25px" />
         </div>
-        <div class="border-rounded" id="send-button" (click)="sendMessage($event)">
+        <div class="round" id="send-button" (click)="sendMessage($event)">
             <img class="icon-padding" id="send-icon" [src]="inputAssets.sendBtn" height="25px" />
         </div>
 

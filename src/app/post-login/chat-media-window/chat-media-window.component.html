@@ -1,4 +1,4 @@
-<div>
+<div class="h-100 d-flex flex-col hidden-overflow">
     <!-- Header -->
     <div class="chat-details-header">
         <div class="my-1 d-flex justify-between w-100">
@@ -15,4 +15,24 @@
 
     <!-- tabs -->
     <app-custom-tabs [tabs]='tabs' [selectedTab]='selectedtab' [onTabClick]="tabSwitch"></app-custom-tabs>
+
+    <!-- Tab content -->
+    <div class="media-scroll hidden-scroll" [ngSwitch]="selectedtab">
+        <div *ngSwitchCase="'Media'">
+            <div class="media-grid">
+                <div *ngFor="let images of staticMedia">
+                    <img class="p-2 corner-rounded pointer" [src]="images.img" height="100px" width="100px" />
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase="'Links'">
+            <div>
+            </div>
+        </div>
+        <p *ngSwitchCase="'Docs'">This is green.</p>
+        <p *ngSwitchDefault>This is some other color.</p>
+    </div>
+
+    <!-- custom padding to stop scrollable from overflowing out -->
+    <div class="py-1"></div>
 </div>

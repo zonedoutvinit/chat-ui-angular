@@ -89,3 +89,108 @@ export const availableChats = [
     userName: 'Harry Maguire',
   },
 ];
+
+export const mediaStaticFiles = [
+  {
+    name: '1',
+    img: 'assets/images/media/1.jpg',
+  },
+  {
+    name: '2',
+    img: 'assets/images/media/2.jpg',
+  },
+  {
+    name: '3',
+    img: 'assets/images/media/3.jpg',
+  },
+  {
+    name: '4',
+    img: 'assets/images/media/4.jpg',
+  },
+  {
+    name: '5',
+    img: 'assets/images/media/5.jpg',
+  },
+  {
+    name: '6',
+    img: 'assets/images/media/6.jpg',
+  },
+  {
+    name: '7',
+    img: 'assets/images/media/7.jpg',
+  },
+  {
+    name: '8',
+    img: 'assets/images/media/8.jpg',
+  },
+  {
+    name: '9',
+    img: 'assets/images/media/9.jpg',
+  },
+];
+
+export const linkStaticFiles = [
+  {
+    id: '1',
+    link: 'https://google.com',
+    name: 'Better your game',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '2',
+    link: 'https://google.com',
+    name: 'Chelsea Own goal',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '3',
+    link: 'https://google.com',
+    name: 'Manchester to buy',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '4',
+    link: 'https://google.com',
+    name: 'Messi vs Ronaldo',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '5',
+    link: 'https://google.com',
+    name: 'Messi',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '6',
+    link: 'https://google.com',
+    name: '',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '7',
+    link: 'https://google.com',
+    name: '',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '8',
+    link: 'https://google.com',
+    name: '',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+  {
+    id: '9',
+    link: 'https://google.com',
+    name: '',
+    desc: '',
+    img: 'assets/images/link.svg',
+  },
+];

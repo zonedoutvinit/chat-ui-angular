@@ -10,3 +10,13 @@
   font-size: large;
   cursor: default;
 }
+
+.media-scroll{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.media-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

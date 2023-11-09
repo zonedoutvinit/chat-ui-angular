@@ -1,14 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   background-color: #e4dbfd;
-  font-family: "Roboto" ;
+  font-family: "Roboto";
+}
+
+.hidden-scroll::-webkit-scrollbar {  /* chrome safari etc */
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+  cursor: all-scroll;
 }
 
 .d-flex {
@@ -53,6 +60,10 @@ html {
 
 .w-70 {
   width: 70%;
+}
+
+.h-70 {
+  height: 70%;
 }
 
 .w-50 {
@@ -195,8 +206,12 @@ html {
   padding: 0.75rem;
 }
 
-.border-rounded {
+.round {
   border-radius: 50%;
+}
+
+.corner-rounded {
+  border-radius: 30px;
 }
 
 .relative {
@@ -219,6 +234,10 @@ html {
   text-align: center;
 }
 
-.z-100{
+.z-100 {
   z-index: 100;
+}
+
+.hidden-overflow {
+  overflow: hidden;
 }

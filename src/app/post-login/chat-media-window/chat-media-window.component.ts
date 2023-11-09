@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { sampleMediaDetail } from 'src/utils/static-data';
+import { mediaStaticFiles, sampleMediaDetail } from 'src/utils/static-data';
 
 @Component({
   selector: 'app-chat-media-window',
@@ -16,7 +16,6 @@ export class ChatMediaWindowComponent implements OnInit {
 
   chatDetailAssets = sampleMediaDetail;
   closeCard = () => this.onClose && this.onClose(false);
-  tabSwitch = (newSelectedtab: string) => {
-    this.selectedtab = newSelectedtab;
-  };
+  tabSwitch = (newSelectedtab: string) => this.selectedtab = newSelectedtab;
+  staticMedia = mediaStaticFiles;
 }
