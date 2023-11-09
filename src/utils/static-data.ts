@@ -64,6 +64,11 @@ export const sampleChatDetail = {
     'Join us for engaging discussions on all things related to lifestyle, from fitness and fashion to travel and food.',
 };
 
+export const sampleMediaDetail = {
+  close: 'assets/images/cross.svg',
+  title: 'Media',
+};
+
 export const availableChats = [
   {
     userName: 'Harry Maguire',

@@ -10,8 +10,8 @@ export class MainWindowComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showChatDetails = true;
-  showMediaDetails = false;
+  showChatDetails = false;
+  showMediaDetails = true;
 
   setShowChatDetails = (bool: boolean) => {
     this.showChatDetails = bool;

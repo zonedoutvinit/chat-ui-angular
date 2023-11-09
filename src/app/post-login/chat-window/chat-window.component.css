@@ -1,6 +1,5 @@
-
 .chat-header {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   display: flex;
   justify-content: space-between;
 
@@ -15,14 +14,14 @@
   overflow-y: auto;
 
   .message {
-    margin: 5px;
-    padding: 16px;
-    border-radius: 10px;
+    margin: 0.313rem;
+    padding: 1rem;
+    border-radius: 0.625rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: fit-content;
-    max-width: 867px;
+    max-width: 54.188rem;
   }
 
   .user {
@@ -47,14 +46,14 @@
 }
 
 #message-input {
-  flex: 1 1 100px;
+  flex: 1;
   height: 50px;
   padding: 0% 20px;
   border: none;
   outline: none;
   border-radius: 10px;
   background-color: #e7e4e4;
-  margin: 1%;
+  margin: 0.8rem;
   width: 75%;
 }
 
