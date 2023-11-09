@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { generateRandomColor, randomColorShortNameGenerator } from 'src/utils/helpers';
+import { availableChats, sampleChatDetail } from 'src/utils/static-data';
 
 @Component({
   selector: 'app-chat-detail-window',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-detail-window.component.css']
 })
 export class ChatDetailWindowComponent implements OnInit {
-
+  @Input() onClose!: (args: any) => void;
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
+  chatDetailAssets = sampleChatDetail;
+  randomColor1 = generateRandomColor();
+  randomColor2 = generateRandomColor();
+  randomColor3 = generateRandomColor();
+  membersShortList = randomColorShortNameGenerator(availableChats)
+  remainingMembs = availableChats.length - 2
+  closeCard = () => this.onClose && this.onClose(false);
 }

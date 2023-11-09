@@ -1,6 +1,6 @@
 <div class="d-flex flex-col flex-grow">
     <!-- header of chat -->
-    <div class="chat-header">
+    <div class="chat-header" style="height: 6%;">
         <div class="d-flex justify-between pointer" (click)="chatDetailsBtnClick()">
             <div class="d-flex flex-col justify-center">
                 <img [src]=headerInfo.profile height="35px" width="35px" alt="grpImage" class="border-rounded">
@@ -24,7 +24,7 @@
                 <div class="d-flex">
 
                     <div class="">
-                        <img src="assets/userimg.svg" height="18px" width="18px" />
+                        <img src="assets/images/userimg.svg" height="18px" width="18px" />
                     </div>
 
                     <div class="ml-1 chat-sender">{{messages.username}}</div>

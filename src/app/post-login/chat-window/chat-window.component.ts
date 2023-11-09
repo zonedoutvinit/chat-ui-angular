@@ -45,7 +45,7 @@ export class ChatWindowComponent implements AfterViewInit {
       username: 'You',
       content: this.messageContent,
       time: timeFormater(new Date().toISOString()),
-      image: '/assetsuserimg.svg',
+      image: '/assets/images/userimg.svg',
       type: 'user',
     };
     this.messages = [...this.messages, newMessage];

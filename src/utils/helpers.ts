@@ -15,3 +15,19 @@ export const scrollToBottom = (messageItems: QueryList<ElementRef>) => {
     lastMessageItem.nativeElement.scrollIntoView();
   }
 };
+
+export const randomColorShortNameGenerator = (arr: any) => {
+  const firstTwo = [arr[0], arr[1]];
+  const ShortNames = [];
+  for (let element of firstTwo) {
+    let names = element.userName.split(' ');
+    ShortNames.push(names[0].slice(0, 1) + (names[1] && names[1]?.slice(0, 1)));
+  }
+  return ShortNames
+};
+
+export const generateRandomColor = () => {
+  const colors = ['Red', 'Green', 'Blue', 'Purple', 'Orange'];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+};
