@@ -194,3 +194,24 @@ export const linkStaticFiles = [
     img: 'assets/images/link.svg',
   },
 ];
+
+export const availableLinks = [
+  {
+    link: 'https://www.youtube.com/watch?v=EL4UdaLTVWc',
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=vkhMfgOT9Xs',
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=_NgQ9kmSl6Q',
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=etlXPx6lrAE',
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=L2wW5lpa-HM',
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=VPIeUw3Zyds',
+  },
+];
