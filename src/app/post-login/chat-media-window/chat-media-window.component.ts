@@ -16,6 +16,7 @@ export class ChatMediaWindowComponent implements OnInit {
   @Input() onClose!: (args: any) => void;
   selectedtab = 'Media';
   tabs = ['Media', 'Links', 'Docs'];
+  links: any[] = [];
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -39,11 +40,14 @@ export class ChatMediaWindowComponent implements OnInit {
           metaTags.each((index, element) => {
             const tagName = $(element).attr('name'); // Get the 'name' attribute of meta tag
             const tagContent = $(element).attr('content'); // Get the 'content' attribute of meta tag
-
             if (tagName == 'title') {
               item.title = tagContent;
+            } else if (tagName == 'description') {
+              item.description = tagContent;
+            } else if (tagName == 'twitter:image') {
+              item.image = tagContent;
             }
-            console.log(`Tag Name: ${tagName}, Content: ${tagContent}`);
+            // console.log(`Tag Name: ${tagName}, Content: ${tagContent}`);
             // Log or manipulate the meta tag attributes as needed
           });
         },
@@ -52,5 +56,8 @@ export class ChatMediaWindowComponent implements OnInit {
         }
       );
     });
+
+		console.log("func/var: ChatMediaWindowComponent -> fetchMetaTags -> availableLinks", availableLinks)
+    this.links = availableLinks;
   }
 }

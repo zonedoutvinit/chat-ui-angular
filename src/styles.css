@@ -58,6 +58,14 @@ html {
   height: 100%;
 }
 
+.w-90 {
+  width: 90%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
 .w-70 {
   width: 70%;
 }

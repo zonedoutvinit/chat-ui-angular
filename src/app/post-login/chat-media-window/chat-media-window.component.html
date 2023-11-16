@@ -14,10 +14,10 @@
     </div>
 
     <!-- tabs -->
-    <app-custom-tabs [tabs]='tabs' [selectedTab]='selectedtab' [onTabClick]="tabSwitch"></app-custom-tabs>
+    <app-custom-tabs class="w-100" [tabs]='tabs' [selectedTab]='selectedtab' [onTabClick]="tabSwitch"></app-custom-tabs>
 
     <!-- Tab content -->
-    <div class="media-scroll hidden-scroll" [ngSwitch]="selectedtab">
+    <div class="media-scroll hidden-scroll w-100" [ngSwitch]="selectedtab">
         <div *ngSwitchCase="'Media'">
             <div class="media-grid">
                 <div *ngFor="let images of staticMedia">
@@ -26,7 +26,12 @@
             </div>
         </div>
         <div *ngSwitchCase="'Links'">
-            <div>
+            <div *ngFor="let link of links">
+                <div class="link-item m-2">
+                    <span>{{link.title}}</span>
+                    <!-- <span>{{link.link}}</span> -->
+                    <!-- <span>{{link.description}}</span> -->
+                </div>
             </div>
         </div>
         <p *ngSwitchCase="'Docs'">This is green.</p>
