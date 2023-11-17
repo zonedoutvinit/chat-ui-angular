@@ -27,10 +27,12 @@
         </div>
         <div *ngSwitchCase="'Links'">
             <div *ngFor="let link of links">
-                <div class="link-item m-2">
-                    <span>{{link.title}}</span>
-                    <!-- <span>{{link.link}}</span> -->
-                    <!-- <span>{{link.description}}</span> -->
+                <div class="link-item d-flex m-2 pointer" (click)="onLinkClick(link.link)">
+                    <img [src]="link.image" height="80px" width="80px" class="p-1 semi-corner-rounded" />
+                    <div class="d-flex flex-col justify-center">
+                        <span class="link-title my-1">{{summerizeText(link.title, 'title')}}</span>
+                        <span class="link-desc my-1">{{summerizeText(link.description, 'desc')}}</span>
+                    </div>
                 </div>
             </div>
         </div>

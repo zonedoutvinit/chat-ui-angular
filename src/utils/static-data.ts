@@ -198,20 +198,46 @@ export const linkStaticFiles = [
 export const availableLinks = [
   {
     link: 'https://www.youtube.com/watch?v=EL4UdaLTVWc',
+    title: 'Family Guy Best Moments #1',
+    description: '',
+    image:
+      'https://i.ytimg.com/vi/EL4UdaLTVWc/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE4gZChlMA8=&rs=AOn4CLCLAebnhYX8Z4uU0v4_OP_oAKPZ8Q',
   },
   {
     link: 'https://www.youtube.com/watch?v=vkhMfgOT9Xs',
+    title: "America's Deadliest Drug: Fentanyl | Patriot Act ",
+    image: 'https://i.ytimg.com/vi/vkhMfgOT9Xs/maxresdefault.jpg',
+    description:
+      'On the latest episode of Patriot Act, Hasan discusses America’s opioid epidemic and the recent spike in deaths due to one drug in particular: fentanyl. ',
   },
   {
     link: 'https://www.youtube.com/watch?v=_NgQ9kmSl6Q',
+    title: 'adblock users on youtube right now:',
+    image: 'https://i.ytimg.com/vi/_NgQ9kmSl6Q/maxresdefault.jpg',
+    description:
+      'Twitter: https://twitter.com/ManCarryingOur second channel: https://www.youtube.com/channel/UC8aGE10t6QrcdRMpgorwkAAPatreon: https://www.patreon.com/mancarry',
   },
   {
     link: 'https://www.youtube.com/watch?v=etlXPx6lrAE',
+    image: 'https://i.ytimg.com/vi/etlXPx6lrAE/maxresdefault.jpg',
+    title:
+      'Why did the world let India annex Goa? (Short Animated Documentary)',
+    description:
+      'In 1961 the Indian army marched into Portuguese Goa and after two days of fighting formally annexed it into the country. Given that the world largely believe...',
   },
   {
     link: 'https://www.youtube.com/watch?v=L2wW5lpa-HM',
+    image: 'https://i.ytimg.com/vi/L2wW5lpa-HM/maxresdefault.jpg',
+    description:
+      'Checkout my Introductory course Bharata: A Biography of the Oldest CivilizationEnroll here - https://abhijitchavda7460.ongraphy.com/s/storeFor business/colla...',
+    title:
+      'Was Netaji Alive As Gumnami Baba? | Anuj Dhar on Subhas Chandra Bose | Abhijit Chavda Podcast 43',
   },
   {
     link: 'https://www.youtube.com/watch?v=VPIeUw3Zyds',
+    title: 'System76 Pangolin Review: the 15" all rounder AMD Linux laptop',
+    description:
+      'Head to https://squarespace.com/thelinuxexperiment to save 10% off your first purchase of a website or domain using code thelinuxexperiment👏 SUPPORT THE CHA...',
+    image: 'https://i.ytimg.com/vi/VPIeUw3Zyds/maxresdefault.jpg',
   },
 ];

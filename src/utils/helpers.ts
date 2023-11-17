@@ -23,11 +23,17 @@ export const randomColorShortNameGenerator = (arr: any) => {
     let names = element.userName.split(' ');
     ShortNames.push(names[0].slice(0, 1) + (names[1] && names[1]?.slice(0, 1)));
   }
-  return ShortNames
+  return ShortNames;
 };
 
 export const generateRandomColor = () => {
   const colors = ['Red', 'Green', 'Blue', 'Purple', 'Orange'];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
+};
+
+export const sumText = (text: string, type: string) => {
+  if (type === 'title') return text.slice(0, 25) + '...';
+  else if (type === 'desc') return text.slice(0, 35) + '...';
+  else return '...';
 };

@@ -11,18 +11,28 @@
   cursor: default;
 }
 
-.media-scroll{
+.media-scroll {
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.media-grid{
+.media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.link-item{
+.link-item {
   border-radius: 20px;
-  background-color: rgb(153, 153, 153);
-  height: 100px;
+  background-color: rgb(201, 201, 201);
+  height: 95px;
+}
+
+.link-title {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.link-desc {
+  font-size: small;
+  font-weight: 400;
 }

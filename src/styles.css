@@ -11,10 +11,11 @@ html {
   font-family: "Roboto";
 }
 
-.hidden-scroll::-webkit-scrollbar {  /* chrome safari etc */
+.hidden-scroll::-webkit-scrollbar {
+  /* chrome safari etc */
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;    /* Firefox */
+  scrollbar-width: none; /* Firefox */
   cursor: all-scroll;
 }
 
@@ -220,6 +221,10 @@ html {
 
 .corner-rounded {
   border-radius: 30px;
+}
+
+.semi-corner-rounded {
+  border-radius: 20px;
 }
 
 .relative {
